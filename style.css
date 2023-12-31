@@ -1,0 +1,132 @@
+/* styles for body, h1, p, label, input and button */
+body, h1, p, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+
+.ny-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background: linear-gradient(to bottom, #3498db, #e74c3c); 
+    color: #fff; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.ny-text {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+
+.ny-text h1, .ny-text p {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem; 
+}
+
+
+#wishForm {
+    text-align: center;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid greenyellow;
+}
+
+input:hover {
+    border-bottom-color: blue;
+   
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+/* firework style */
+.firework {
+    width: 20px;
+    height: 20px;
+    background-color: #f00; 
+    border-radius: 50%;
+    position: absolute;
+    animation: explode 1s infinite, moveUp 2s infinite;
+}
+
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh); 
+    }
+}
+
+
+.red {
+    background-color: #ff0000; 
+}
+
+.green {
+    background-color: #00ff00;
+}
+
+.blue {
+    background-color: #0000ff;
+}
+
+.yellow {
+    background-color: #ffff00;
+}
+
+/* footer style */
+footer {
+    background: linear-gradient(to top, #3498db, #e74c3c);  
+    color: #fff; 
+    text-align: center;
+    padding: 10px;
+    font-size: 50%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

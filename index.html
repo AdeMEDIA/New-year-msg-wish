@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 New Year Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container -->
+    <div class="ny-container">
+        <!-- Firework animations to add  celebratory touch -->
+        <div class="firework red" style="left: 20%; top: 70%;"></div>
+        <div class="firework green" style="left: 50%; top: 30%;"></div>
+        <div class="firework blue" style="left: 80%; top: 50%;"></div>
+        <div class="firework yellow" style="left: 30%; top: 20%;"></div>
+        <div class="firework purple" style="left: 70%; top: 80%;"></div>
+        
+        <div class="ny-text">
+            <h1>2024</h1>
+            <p>Happy New Year</p>
+        </div>
+        
+        <!-- Form for making wish -->
+        <form action="https://formspree.io/f/mkndnjbo"
+  method="POST" id="wishForm">
+  <label for="wishInput">Make a New Year wish:</label>
+            <input type="text" id="wishInput" placeholder="Type your wish here" name="Wish" required>
+            <br>
+            <button type="submit" onclick="makeWish()">Submit Wish</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 ||  &lt;ADEMEDIA/&gt;<br>
+        Inspiration credit to CodewithRandom on Telegram.
+    </footer>
+    
+    <script src="main.js">
+    </script>
+</body>
+</html>
